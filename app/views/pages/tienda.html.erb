@@ -1,0 +1,27 @@
+<h1>Productos</h1>
+
+
+<div class="row">
+
+<%@products.each do |producto|%>
+<div class="col-md-4">
+
+<%= link_to pages_producto_path do %>
+<div class="card">
+  <%= image_tag producto.photo, class: 'card-img-top'%>
+
+  <div class="card-body">
+  <h3><%= producto.name %></h3>
+  <p class="card-text">Precio: <%= producto.price %></p>
+  <p class="card-text"><%= producto.description %></p>
+  <%= link_to "Agregar", product_orders_path(producto), class:"btn btn-danger btn-rounded", remote: true%>
+  </div>
+</div>
+<% end %>
+
+
+</div>
+<% end %>
+
+
+</div>

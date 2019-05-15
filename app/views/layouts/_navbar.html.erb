@@ -1,0 +1,46 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item"><%= link_to 'Inicio', pages_inicio_path, class: 'nav-link'%></li>
+
+      <li class="nav-item"><%= link_to 'Tienda', pages_tienda_path, class: 'nav-link'%></li>
+
+      <li class="nav-item"><%= link_to 'Testeo de sustancias', pages_sustancias_path, class: 'nav-link'%></li>
+
+      <li class="nav-item"><%= link_to 'Quienes somos?', pages_informacion_path, class: 'nav-link'%></li>
+
+      <li class="nav-item"><%= link_to 'Contacto', pages_contacto_path, class: 'nav-link'%></li>
+
+      <li class="nav-item"><%= link_to 'Tested', pages_testeado_path, class: 'nav-link'%></li>
+
+      <li class="nav-item"><%= link_to 'Carro de compras', pages_compras_path, class: 'nav-link'%></li>
+
+
+    </ul>
+    <!-- Links -->
+
+    <!-- <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form> -->
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->

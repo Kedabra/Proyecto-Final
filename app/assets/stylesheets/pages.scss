@@ -1,0 +1,38 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primari-color: #4A811D;
+
+body{
+  background-color :$primari-color;
+}
+
+
+#logo-principal{
+  width: 25em;
+}
+.page-footer{
+
+  #logo-footer{
+    width: 15em;
+    display: block;
+    position: left;
+  }
+
+  p{
+    font-size:1.2em;
+  }
+  .columna{
+    text-align: center;
+  }
+
+}
+
+.card-img-top{
+  width:10em;
+}
+.card{
+  height: 25em;
+  margin:1.5em;
+}
