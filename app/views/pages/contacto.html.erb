@@ -1,2 +1,12 @@
-<h1>Pages#contacto</h1>
-<p>Find me in app/views/pages/contacto.html.erb</p>
+<h1>Contactanos</h1>
+
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Nombre") %>
+  <%= text_field_tag(:q) %>
+  <%= label_tag(:email, "Email") %>
+  <%= email_field(:email, :adress) %>
+  <%= label_tag(:mensaje, "Mensaje") %>
+  <%= text_field_tag(:mensaje) %>
+  <%= submit_tag("Enviar") %>
+<% end %>

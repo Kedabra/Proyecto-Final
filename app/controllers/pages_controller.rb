@@ -3,11 +3,18 @@ class PagesController < ApplicationController
   end
 
   def tienda
-    @products = Product.all
+
+    if params[:buscar].present?
+        @products = Product.where('name like ?', "%#{params[:buscar]}%")
+    else
+      @products = Product.all
+    end
   end
 
   def sustancias
+    @informations = Information.all
   end
+
 
   def informacion
   end
@@ -22,13 +29,11 @@ class PagesController < ApplicationController
   end
 
   def producto
-
+    @product = Product.find(params[:id])
   end
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_product
-      @producto = Product.find(params[:id])
-    end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params

@@ -1,2 +1,8 @@
-<h1>Pages#sustancias</h1>
-<p>Find me in app/views/pages/sustancias.html.erb</p>
+<div class="links_to_infomation">
+  <%= link_to 'Marquis', pages_sustancias_path, class:'btn btn-dark' %>
+  <%= link_to 'Ehrlich', pages_sustancias_path, class:'btn btn-dark' %>
+  <%= link_to 'Liebermann', pages_sustancias_path, class:'btn btn-dark' %>
+</div>
+
+
+<%= render  @informations %>

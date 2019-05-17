@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$primari-color: #4A811D;
+$primari-color: #68979B ;
 
 body{
   background-color :$primari-color;
@@ -35,4 +35,8 @@ body{
 .card{
   height: 25em;
   margin:1.5em;
+}
+
+u{
+  width:100%;
 }

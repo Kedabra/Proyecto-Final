@@ -6,9 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# 10.times do |i|
+#     Product.create(name: Faker::Commerce.product_name,
+#                    price: Faker::Commerce.price.to_i,
+#                    description: Faker::Quote.famous_last_words,
+#                    photo:"https://picsum.photos/id/#{i}/200/300")
+# end
+
 10.times do |i|
-    Product.create(name: Faker::Commerce.product_name,
-                   price: Faker::Commerce.price.to_i,
-                   description: Faker::Quote.famous_last_words,
-                   photo:"https://picsum.photos/id/#{i}/200/300")
+    Information.create(title: Faker::Commerce.product_name,
+                   description: Faker::Quote.famous_last_words,)
+
+    
 end
