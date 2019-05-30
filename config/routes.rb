@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'pages/contacto'
   get 'pages/testeado'
   get 'pages/compras'
+  get 'pages/tiendas'
   get 'pages/producto/:id', to: 'pages#producto', as: 'pages_producto'
   resources :products do
     resources :orders, only: :create

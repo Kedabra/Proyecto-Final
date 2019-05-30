@@ -1,2 +1,14 @@
-<h1>Pages#testeado</h1>
-<p>Find me in app/views/pages/testeado.html.erb</p>
+
+<div id='calendar'></div>
+
+  <script type="text/javascript">
+    $(function() {
+
+      // page is now ready, initialize the calendar...
+
+      $('#calendar').fullCalendar({
+        events:  <%= raw @testeds.to_json %>  
+      })
+
+    });
+  </script>

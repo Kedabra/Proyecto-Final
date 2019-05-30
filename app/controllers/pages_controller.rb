@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def sustancias
-    @informations = Information.all
+    @information = Information.all
   end
 
 
@@ -23,6 +23,7 @@ class PagesController < ApplicationController
   end
 
   def testeado
+    @testeds = Tested.all
   end
 
   def compras

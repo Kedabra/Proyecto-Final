@@ -10,7 +10,10 @@ body{
 
 
 #logo-principal{
-  width: 25em;
+  width: 12em;
+}
+.card{
+  text-align: center;
 }
 .page-footer{
 
@@ -39,4 +42,19 @@ body{
 
 u{
   width:100%;
+}
+
+.productos{
+  height: 20em;
+  text-align: center;
+  margin: 0px auto;
+  padding: 0px auto;
+  overflow: visible;
+}
+.card-img-top{
+
+}
+
+.card-body{
+  margin-top: -2em;
 }

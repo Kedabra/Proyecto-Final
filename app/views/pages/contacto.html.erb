@@ -1,12 +1,15 @@
 <h1>Contactanos</h1>
 
 
-<%= form_tag("/search", method: "get") do %>
+<div class="">
+
+<%= form_tag("/search", method: "get", class:'text-center border border-light p-5' ) do %>
   <%= label_tag(:q, "Nombre") %>
   <%= text_field_tag(:q) %>
   <%= label_tag(:email, "Email") %>
   <%= email_field(:email, :adress) %>
   <%= label_tag(:mensaje, "Mensaje") %>
   <%= text_field_tag(:mensaje) %>
-  <%= submit_tag("Enviar") %>
+  <%= submit_tag("Contactanos",  class:'btn btn-info btn-block my-4') %>
 <% end %>
+</div>
