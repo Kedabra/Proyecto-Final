@@ -9,6 +9,26 @@ body{
 }
 
 
+#div-principal{
+  width: 100%;
+  margin: 1.5em;
+  margin: 0px auto;
+  margin-top: 1.5em;
+}
+
+// #sign{
+//   float: right;
+//   position: absolute;
+//   padding: 0px;
+//   font-size: 1em;
+//   right: 0px;
+//   margin-left: 1.4em;
+// }
+
+.navbar{
+  margin-bottom: 3em;
+}
+
 #logo-principal{
   width: 12em;
 }
@@ -21,6 +41,7 @@ body{
     width: 15em;
     display: block;
     position: left;
+    margin: 0px auto;
   }
 
   p{
@@ -35,6 +56,7 @@ body{
 .card-img-top{
   width:10em;
 }
+
 .card{
   height: 25em;
   margin:1.5em;
@@ -43,6 +65,8 @@ body{
 u{
   width:100%;
 }
+
+
 
 .productos{
   height: 20em;
@@ -60,8 +84,22 @@ u{
 }
 
 @media(max-width:767px){
-    
+  #div-principal{
+    width: 22em;
+  }
+
+  .card{
+    .card-body{
+      display: block;
+    }
+    img{
+      display: inline-block;
+    }
+
+  }
 }
+
+
 
 
 @media(min-width:768px){}

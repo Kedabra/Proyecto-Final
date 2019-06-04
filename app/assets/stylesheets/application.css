@@ -17,10 +17,10 @@
  *= require_tree .
  */
 
-#div-principal{
-  width: 100%;
-  margin: 1.5em;
-}
+
 #calendar{
   background-color: white;
+}
+nav{
+display: none;
 }
