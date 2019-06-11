@@ -2,19 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$primari-color: #68979B ;
+$primari-color: #e8eaf6 ;
 
 body{
   background-color :$primari-color;
+  margin: 0px auto;
+  padding: 0px auto;
+  font-size: 1.2em;
+}
+
+body a{
+  text-decoration: none !important;
+
+
 }
 
 
 #div-principal{
-  width: 100%;
-  margin: 1.5em;
   margin: 0px auto;
-  margin-top: 1.5em;
+  margin-top: 100px;
+  width: 100% ;
 }
+
+
 
 // #sign{
 //   float: right;
@@ -27,6 +37,21 @@ body{
 
 .navbar{
   margin-bottom: 3em;
+  font-size: .8em;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+  #sign{
+    background-color: white !important;
+    border-radius: 1.6em;
+    color: #136f99;
+    margin-left: 1.1em;
+  }
+  #sign:hover {
+  background-color: #bbdefb !important;
+  font-size: 1.1em;
+  }
 }
 
 #logo-principal{
@@ -37,11 +62,17 @@ body{
 }
 .page-footer{
 
+  background-color: #1C2331;
+
   #logo-footer{
     width: 15em;
     display: block;
     position: left;
     margin: 0px auto;
+  }
+
+  .btn-dark{
+    font-style: white !important;
   }
 
   p{
@@ -66,8 +97,6 @@ u{
   width:100%;
 }
 
-
-
 .productos{
   height: 20em;
   text-align: center;
@@ -75,17 +104,43 @@ u{
   padding: 0px auto;
   overflow: visible;
 }
-.card-img-top{
-
-}
 
 .card-body{
   margin-top: -2em;
 }
 
+.links_to_infomation{
+  margin: 0px auto;
+  text-align: center;
+  a{
+    border-radius: 1.2em;
+  }
+}
+
+.information{
+  background-image: linear-gradient(#f5f7fa, #c3cfe2);
+  padding-top:2em;
+  width: 70%;
+  margin: 3em auto 2em  auto ;
+
+  height:fit-content;
+  h3{
+    font-size: 3em;
+    background-color: #263238 ;
+    color:white;
+  }
+  p{
+    font-size: 2em !important;
+    margin-top: .3em;
+    color:black !important;
+  }
+}
+
+
+
 @media(max-width:767px){
-  #div-principal{
-    width: 22em;
+
+  body{
   }
 
   .card{
@@ -97,9 +152,18 @@ u{
     }
 
   }
+
+  .information{
+    margin-left: 0px;
+    width: 100%;
+    h3{
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 1.2em !important;
+    }
+  }
 }
-
-
 
 
 @media(min-width:768px){}

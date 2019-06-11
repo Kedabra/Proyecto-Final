@@ -13,14 +13,11 @@
  *= require bootstrap
  *= require fullcalendar/dist/fullcalendar
  *= require mdb
- *= require_self
  *= require_tree .
+ *= require_self
  */
 
 
 #calendar{
   background-color: white;
-}
-nav{
-display: none;
 }

@@ -1,14 +1,12 @@
 
 <!--RENDER INFORMACIONES  -->
-  <div class="row">
     <% @information.each do |informacion|%>
-      <div class="col-md-4">
-        <div class="card">
+    
+        <div class="card information">
           <div class="card-body">
-            <h3><%= informacion.title %></h3>
-            <p><%= informacion.description%></p>
+            <h3 class = "card-header"><%= informacion.title %></h3>
+            <p class = "card-text"><%= informacion.description%></p>
           </div>
         </div>
-      </div>
+
     <% end %>
-  </div>

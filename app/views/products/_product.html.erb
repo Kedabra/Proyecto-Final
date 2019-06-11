@@ -9,7 +9,7 @@
   <h3 class = "card-header"><%= product.name %></h3>
   <p class="card-text">Precio: <%= product.price %></p>
   <p class="card-text"><%= product.description %></p>
-  <%= link_to "Agregar", product_orders_path(product), class:"btn btn-danger btn-rounded", remote: true%>
+  <%= link_to "Agregar", product_orders_path(product), class:"btn btn-light btn-rounded", remote: true%>
   </div>
 </div>
 <% end %>

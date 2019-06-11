@@ -18,6 +18,7 @@ gem 'faker'
 gem 'devise'
 gem 'webpacker', '~> 4.x'
 gem 'omniauth-facebook'
+gem 'activeadmin'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
