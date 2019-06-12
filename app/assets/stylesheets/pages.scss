@@ -8,7 +8,7 @@ body{
   background-color :$primari-color;
   margin: 0px auto;
   padding: 0px auto;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 body a{
@@ -21,19 +21,8 @@ body a{
 #div-principal{
   margin: 0px auto;
   margin-top: 100px;
-  width: 100% ;
+  width: 80% ;
 }
-
-
-
-// #sign{
-//   float: right;
-//   position: absolute;
-//   padding: 0px;
-//   font-size: 1em;
-//   right: 0px;
-//   margin-left: 1.4em;
-// }
 
 .navbar{
   margin-bottom: 3em;
@@ -42,10 +31,11 @@ body a{
   width: 100%;
   top: 0px;
   z-index: 1;
+  background-color:#283593 !important;
   #sign{
     background-color: white !important;
     border-radius: 1.6em;
-    color: #136f99;
+    color: #212121;
     margin-left: 1.1em;
   }
   #sign:hover {
@@ -97,6 +87,27 @@ u{
   width:100%;
 }
 
+.sobre-nosotros{
+  background-color: #212121;
+  text-align: center;
+  border-radius: 10px;
+  h2{
+    color: white;
+  }
+  p{
+    color:white;
+  }
+}
+
+.div-producto{
+  img{
+
+  }
+  a{
+    margin-bottom: 0px;
+  }
+}
+
 .productos{
   height: 20em;
   text-align: center;
@@ -110,11 +121,23 @@ u{
 }
 
 .links_to_infomation{
+  position: fixed;
   margin: 0px auto;
+  left: 0px;
+  right: 0px;
   text-align: center;
+  top:80px;
   a{
     border-radius: 1.2em;
   }
+}
+
+.links_to_infomation a:hover {
+font-size: 1.1em;
+}
+
+.information-div{
+  margin-top: 10em;
 }
 
 .information{
