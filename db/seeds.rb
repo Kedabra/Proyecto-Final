@@ -25,3 +25,5 @@
 #   Tested.create!(title: Faker::Name.name, start: start_at)
 # end
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+
+AdminUser.create!(email: 'omarelias1997@gmail.com', password: 'omar3349735', password_confirmation: 'omar3349735') 
