@@ -30,7 +30,7 @@ body a{
   position: fixed;
   width: 100%;
   top: 0px;
-  z-index: 1;
+  z-index: 3;
   background-color:#283593 !important;
   #sign{
     background-color: white !important;
@@ -157,6 +157,9 @@ font-size: 1.1em;
     margin-top: .3em;
     color:black !important;
   }
+}
+
+#calendar{
 }
 
 
