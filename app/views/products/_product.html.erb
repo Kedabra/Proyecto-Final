@@ -1,15 +1,15 @@
 
-<div class="col-md-4 col-sm-6 div-producto">
+<div class="col-md-4 col-xs-6 div-producto">
 
 <%= link_to pages_producto_path(product) do %>
 <div class="card">
-<%= image_tag 'producto.png', id: 'logo-principal', class:'card-img-top'%>
+<%= image_tag "#{product.photo}", id: 'logo-principal', class:'card-img-top'%>
 
   <div class="card-body productos">
   <h3 class = "card-header"><%= product.name %></h3>
   <p class="card-text">Precio: <%= product.price %></p>
-  <p class="card-text"><%= product.description %></p>
-  <%= link_to "Agregar", product_orders_path(product), class:"btn btn-light btn-rounded", remote: true%>
+  <!-- <p class="card-text"><%= product.description %></p> -->
+  <%= link_to "Agregar", product_orders_path(product), class:"btn btn-light btn-rounded" , method:'post', remote: true%>
   </div>
 </div>
 <% end %>

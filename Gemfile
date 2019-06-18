@@ -19,6 +19,8 @@ gem 'devise'
 gem 'webpacker', '~> 4.x'
 gem 'omniauth-facebook'
 gem 'activeadmin'
+gem 'rollbar'
+gem "font-awesome-rails"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 

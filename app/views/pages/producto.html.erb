@@ -1,6 +1,10 @@
 <div class="card-body">
+
+  <%= image_tag "#{@product.photo}", id: 'logo-principal', class:'card-img-top'%>
 <h3><%= @product.name %></h3>
 <p class="card-text">Precio: <%= @product.price %></p>
 <p class="card-text"><%= @product.description %></p>
+
+  <%= link_to "Agregar", product_orders_path(@product), class:"btn btn-light btn-rounded" , method:'post', remote: true%>
 </div>
 </div>

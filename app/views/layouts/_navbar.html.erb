@@ -28,12 +28,13 @@
 
       <li class="nav-item"><%= link_to 'Tested', pages_testeado_path, class: 'nav-link'%></li>
 
-      <li class="nav-item"><%= link_to 'Carro de compras', pages_compras_path, class: 'nav-link'%></li>
+      <li class="nav-item"><%= link_to 'Carro de compras', orders_shopping_path, class: 'nav-link'%></li>
 
     </ul>
 
     <% if current_user%>
         <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class:"nav-link", id:"sign"%>
+        <%= link_to current_user.email, users_profile_path , class:"nav-link", id:"sign"%>
     <% else %>
         <%= link_to 'Sign up', new_user_registration_path, class:"nav-link", id:"sign"%>
         <%= link_to 'log in', new_user_session_path, class:"nav-link", id:"sign" %>
