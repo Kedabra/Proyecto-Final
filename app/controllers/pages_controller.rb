@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def tienda
 
     if params[:buscar].present?
-        @products = Product.where('name like ?', "%#{params[:buscar]}%")
+        @products = Product.where(' name like ?', "%#{params[:buscar]}%")
     else
       @products = Product.all
     end
