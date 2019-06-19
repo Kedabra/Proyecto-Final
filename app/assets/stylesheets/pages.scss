@@ -17,6 +17,24 @@ body a{
 
 }
 
+ .alert{
+  color:black;
+  position: fixed;
+  margin-top: 40px;
+
+}
+
+.total{
+  h2{
+    display:  inline-block;
+  }
+  h3{
+    display:  inline-block;
+  }
+  .jumbotron{
+    display: inline-block ;
+  }
+}
 
 #div-principal{
   margin: 0px auto;

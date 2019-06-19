@@ -1,6 +1,5 @@
-
 class OrdersController < ApplicationController
-
+  before_action :authenticate_user!
   def create
     @order = current_user.orders.find_by(payed:false)
     if @order == nil
@@ -11,10 +10,10 @@ class OrdersController < ApplicationController
     if @order.save
       @productorder = ProductOrder.new(product: @product, order: @order)
       @productorder.save
-      flash.now[:alert] = 'Producto agregado!'
+      redirect_to pages_tienda_path, alert: "La orden a sigo ingresada"
 
     else
-      flash.now[:alert] = 'Producto no agrgado!'
+      redirect_to pages_tienda_path, alert: "La orden a sigo ingresada"
     end
 
 
@@ -33,5 +32,14 @@ class OrdersController < ApplicationController
   def shopping
     @order = current_user.orders.find_by(payed:false)
     @products = @order.products
+    @sum = @order.products.count
+
   end
+
+  def pagar
+    @order = current_user.orders.find_by(payed:false)
+    @products = @order.products
+    @sum = @order.products.count
+  end
+
 end

@@ -31,7 +31,12 @@ class PagesController < ApplicationController
 
   def producto
     @product = Product.find(params[:id])
+    @order = current_user.orders.find_by(payed:false)
+    @products = @order.products
+    @sum = @order.products.count
   end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
 

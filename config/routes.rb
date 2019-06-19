@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'orders/shopping'
   get 'information/marquis'
   get 'information/ehrlich'
+  get 'orders/pagar'
   get 'information/liebermann'
   get 'pages/contacto'
   get 'pages/testeado'

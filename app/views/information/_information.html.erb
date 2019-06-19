@@ -6,10 +6,10 @@
 <!--RENDER INFORMACIONES  -->
     <% @information.each do |informacion|%>
 
-        <div class="card information animated slow wow bounceInLeft">
+        <div class="card information animated wow bounceInLeft delay-1s slower ">
           <div class="card-body">
-            <h3 class = "card-header"><%= informacion.title %></h3>
-            <p class = "card-text"><%= informacion.description%></p>
+            <h3 class = "card-header animated jello"><%= informacion.title %></h3>
+            <p class = "card-text animated pulse"><%= informacion.description%></p>
           </div>
         </div>
 
