@@ -1,5 +1,47 @@
 
+
+<h1 class="display-4">Manda tu test</h1>
+
+<h6>Este servicio se todavía se encuentra en desarrollo, ayúdanos enviando tu aporte!</h6>
+
+<h5>La idea es compilar los tests que nos envíen los usuarios, para luego crear una base de datos con las distintas sustancias que hemos recibido, para la creación de una base de datos mas completa, requerimos cierta información acerca de la muestra:
+ </h5>
+
+ <ul>
+   <li>Tipo de muestra: Pastilla, Estampilla, Polvo, etc</li>
+   <li>Fecha en que fue adquirida: Puede ser aproximada</li>
+   <li>Lugar en que fue adquirida: Puede ser aproximado</li>
+   <li>Comentario: Espacio libre</li>
+   <li>Foto de la muestra COMPLETA: Si es una pastilla, debe mostrar los dos lados, y tener una regla al lado para comprobar las dimensiones.</li>
+   <li>Foto del test: Debe ser CLARA, y mostrar el test junto a la muestra de la foto anterior, además debe indicarse que test es, y estar sobre un fondo blanco, para distinguir mejor los colores. Si es posible, envíanos un video de la reacción!</li>
+   <h3>Si tu envío no cumple estas medidas, es probable que no sea incluído en la base de datos :( </h3>
+ </ul>
+
+ <%= form_tag("", method: "get", class:'text-center border border-light p-5' ) do %>
+
+ <h5 class="card-header info-color white-text text-center py-4">
+     <strong>Envia tu test</strong>
+   </h5>
+
+   <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Tipo de muestra">
+
+      <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Fecha Adquirida  ">
+
+         <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Lugar Adquirida  ">
+
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Comentario ">
+            <div class="custom-control custom-checkbox mb-4">
+                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                    <label class="custom-control-label" for="defaultContactFormCopy">Estoy de acuerdo con los términos y condiciones
+(Tu envío es anónimo y los datos solo los guardamos nosotros!)</label>
+                </div>
+
+    <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Enviar</button>
+
+<% end %>
+
 <div id='calendar'></div>
+<%= render 'modal'%>
 
   <script type="text/javascript">
     $(function() {
@@ -7,7 +49,11 @@
       // page is now ready, initialize the calendar...
 
       $('#calendar').fullCalendar({
-        events:  <%= raw @testeds.to_json %>  
+        events:  <%= raw @testeds.to_json %>,
+        eventCLick: function(events, jsEvent, view){
+          console.log(events);
+          $('.modal').modal();
+        },
       })
 
     });

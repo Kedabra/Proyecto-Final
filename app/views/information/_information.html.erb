@@ -1,8 +1,12 @@
 
+
+<script type="text/javascript">
+  new WOW().init();
+</script>
 <!--RENDER INFORMACIONES  -->
     <% @information.each do |informacion|%>
-    
-        <div class="card information">
+
+        <div class="card information animated slow wow bounceInLeft">
           <div class="card-body">
             <h3 class = "card-header"><%= informacion.title %></h3>
             <p class = "card-text"><%= informacion.description%></p>
