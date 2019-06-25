@@ -23,3 +23,5 @@ Things you may want to cover:
 
 * ...
 # Projecto_final
+# reduciendoDano
+# Proyecto-final
